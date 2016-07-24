@@ -5,7 +5,7 @@ import static java.lang.System.*;
  */
 
 /**
- * @author carlos
+ * @author Carlos Solorzano, Jose Gerardo Molina, Marlon Hernandez
  *
  */
 public class Main {

@@ -1,8 +1,8 @@
 /**
  * 
- * @author
+ * @author Carlos Solorzano, Jose Gerardo Molina, Marlon Hernandez
  *
- * @param <T>
+ * @param <T> Tipo de la estructura
  */
 public interface I_Stack <T>{
 	

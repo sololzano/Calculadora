@@ -5,8 +5,8 @@ import java.util.Vector;
  */
 
 /**
- * @author carlos
- * @param <T>
+ * @author Carlos Solorzano, Jose Gerardo Molina, Marlon Hernandez
+ * @param <T> Tipo de la estructura
  *
  */
 public class Stack<T> implements I_Stack<T> {
