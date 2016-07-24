@@ -1,30 +1,47 @@
+import java.util.Vector;
 
 /**
  * 
  */
-public class Stack implements I_Stack {
 
-    /**
-     * 
-     */
-    public Stack() {
-    }
+/**
+ * @author carlos
+ * @param <T>
+ *
+ */
+public class Stack<T> implements I_Stack<T> {
 
-    /**
-     * 
-     */
-    public Vector stack;
+	private Vector<T> vector;
+	
+	/**
+	 * Constructor vacío
+	 */
+	public Stack() {
+		vector = new Vector<T>();
+	}
 
-    /**
-     * 
-     */
-    public int size;
+	@Override
+	public void push(T element) {
+		vector.add(0, element);
+	}
 
+	@Override
+	public T pop() {
+		return isEmpty() ? null : vector.remove(0);
+	}
 
+	@Override
+	public T get() {
+		return isEmpty() ? null : vector.remove(0);
+	}
 
-    public int getSize() {
-        // TODO implement here
-        return 0;
-    }
+	@Override
+	public int size() {
+		return vector.size();
+	}
 
+	@Override
+	public boolean isEmpty() {
+		return vector.isEmpty();
+	}
 }
