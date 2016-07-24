@@ -1,10 +1,6 @@
 import java.util.Vector;
 
 /**
- * 
- */
-
-/**
  * @author Carlos Solorzano, Jose Gerardo Molina, Marlon Hernandez
  * @param <T> Tipo de la estructura
  *
@@ -21,27 +17,27 @@ public class Stack<T> implements I_Stack<T> {
 	}
 
 	@Override
-	public void push(T element) {
+	public void Push(T element) {
 		vector.add(0, element);
 	}
 
 	@Override
-	public T pop() {
-		return isEmpty() ? null : vector.remove(0);
+	public T Pop() {
+		return IsEmpty() ? null : vector.remove(0);
 	}
 
 	@Override
 	public T get() {
-		return isEmpty() ? null : vector.remove(0);
+		return IsEmpty() ? null : vector.remove(0);
 	}
 
 	@Override
-	public int size() {
+	public int Size() {
 		return vector.size();
 	}
 
 	@Override
-	public boolean isEmpty() {
+	public boolean IsEmpty() {
 		return vector.isEmpty();
 	}
 }
