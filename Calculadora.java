@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  * @author Carlos Solorzano, Jose Gerardo Molina, Marlon Hernandez
  *
@@ -67,8 +72,19 @@ public class Calculadora implements I_Calculadora {
 	 */
 	@Override
 	public String LeerArchivo(String direccion) {
-		// TODO Auto-generated method stub
-		return null;
+		String resultado = "";
+		try {
+			FileReader f = new FileReader(direccion);
+			BufferedReader b = new BufferedReader(f);
+			try {
+				resultado = b.readLine();
+				b.close();
+			} catch (IOException e) {
+				return "No se puede abrir archivo";
+			}
+		} catch (FileNotFoundException e) {
+			return "Archivo no encontrado";
+		}
+		return resultado;
 	}
-
 }

@@ -10,9 +10,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Calculadora calc = new Calculadora();
-		out.println("Expresion: " + "5 1 2 + 4 * + 3 -");
-		out.println(calc.Calcular("5 1 2 + 4 * + 3 -"));
-		//out.println(calc.Calcular("1 2 + 4 * 3 +"));
+		out.println(calc.Calcular(calc.LeerArchivo("datos.txt")));
 		out.println(calc.ToString());
 	}
 }
