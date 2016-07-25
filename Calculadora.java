@@ -24,7 +24,7 @@ public class Calculadora implements I_Calculadora {
 	}
 
 	@Override
-	public String Calcular(String vector) {
+	public int Calcular(String vector) {
 		int n;
 		int num1, num2;
 		for (String sp : vector.split(" ")) {
@@ -56,7 +56,7 @@ public class Calculadora implements I_Calculadora {
 				}
 			}
 		}	
-		return "Resultado: " + stack.Pop().toString();
+		return stack.Pop();
 	}
 
 	/* (non-Javadoc)

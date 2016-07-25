@@ -10,7 +10,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Calculadora calc = new Calculadora();
-		out.println(calc.Calcular(calc.LeerArchivo("datos.txt")));
+		out.println("Resultado: " + calc.Calcular(calc.LeerArchivo("datos.txt")));
 		out.println(calc.ToString());
 	}
 }

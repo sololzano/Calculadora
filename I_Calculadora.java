@@ -9,7 +9,7 @@ public interface I_Calculadora {
 	 * @param vector La cadena de caracteres en formato POSFIX
 	 * @return El resultado del calculo
 	 */
-	public String Calcular (String vector);
+	public int Calcular (String vector);
 
 	/**
 	 * 
